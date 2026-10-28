@@ -1,0 +1,28 @@
+---
+- name: employee information
+  hosts: local
+  connection: local
+  vars:
+    employee_info: "AIOps with DevSecOps on AWS" # string
+    billable_in_hrs: 40 # number
+    temporary_emp: true # boolean
+    skills: # list
+    - Linux
+    - AWS
+    - Scripting
+    - Terraform
+    more_details: # dictionary/map
+      designation: engineer
+      contract_in_years: 2
+    exact_duration_in_month: 21.5
+    
+  tasks:
+  - name: print info and type
+    debug:
+      msg: |
+        name: "{{ employee_info }} : {{ employee_info | type_debug }}"
+        duration: "{{ billable_in_hrs }} : {{ billable_in_hrs | type_debug }}"
+        emp type: "{{ temporary_emp }} : {{ temporary_emp | type_debug }}"
+        skills: "{{ skills }} : {{ skills | type_debug }}"
+        more details: "{{ more_details }} : {{ more_details | type_debug }}"
+        exact duration: "{{ exact_duration_in_month }} : {{ exact_duration_in_month | type_debug }}"
