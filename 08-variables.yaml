@@ -5,7 +5,7 @@
   vars_prompt:
   - name: username
     prompt: Please enter username
-    private: flase
+    private: false
   - name: password
     prompt: Please enter password
     private: true
@@ -13,4 +13,3 @@
   - name: print variables from prompt
     debug:
       msg: "The provided user {{ username }}, password is {{ password }}"
-      
