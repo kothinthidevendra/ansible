@@ -1,0 +1,9 @@
+---
+- name: variables from inventory
+  hosts: local
+  connection: local
+  tasks: 
+  - name: print variables from inventory file
+    debug:
+      msg: Hi, user {{ user_name }}, has joined on {{ doj }}, in {{ department }},
+          reports to {{ manager }}
