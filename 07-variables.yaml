@@ -1,7 +1,7 @@
 ---
 - name: variables from file
   hosts: localhost
-  connections: local
+  connection: local
   vars_files:
     - employee_info.yaml
   tasks:
