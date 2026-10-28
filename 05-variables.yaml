@@ -1,0 +1,12 @@
+- name: demo on variable
+  hosts: local
+  connection: local
+  vars:
+    user_name: "Suresh"
+    department: "DevOps"
+    Manager: "Ramesh"
+    doj: 10-02-2021
+  tasks:
+  - name: demo on variable
+    debug:
+      msg: "Hi, user {{ user_name }}, has joined on {{ doj }}, in {{ department }}, reports to {{ manager }}"
