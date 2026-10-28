@@ -4,7 +4,7 @@
   vars:
     user_name: "Suresh"
     department: "DevOps"
-    Manager: "Ramesh"
+    manager: "Ramesh"
     doj: 10-02-2021
   tasks:
   - name: demo on variable
