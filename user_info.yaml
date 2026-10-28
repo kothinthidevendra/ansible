@@ -2,6 +2,7 @@
     last_name: "Kumar"
     doj: 01-15-2025
     emp_id: 56785
+    department: Devops
     addresses:
     # - is for list
     - type: permanent
