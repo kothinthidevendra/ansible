@@ -1,6 +1,6 @@
 ---
 - name: variables from inventory
-  hosts: localhost
+  hosts: local
   connection: local
   tasks: 
   - name: print variables from inventory file
