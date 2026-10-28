@@ -1,0 +1,14 @@
+- name: demo on task level variables
+  hosts: local
+  connection: local
+  vars:
+    user_name: "Suresh"
+    department: "DevOps"
+    manager: "Ramesh"
+    doj: 10-02-2021
+  tasks:
+  - name: print task level variables
+    vars:
+      manager: "John"
+    debug:
+      msg: "Hi, user {{ user_name }}, has joined on {{ doj }}, in {{ department }}, reports to {{ manager }}"
