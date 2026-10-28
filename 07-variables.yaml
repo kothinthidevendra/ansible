@@ -1,0 +1,11 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_file:
+  - employee_info.yaml
+  tasks:
+  - name: print variables from files
+    debug:
+      msg: "Hi, user {{ user_name }}, has joined on {{ doj }}, in {{ department }}, reports to {{ manager }}"
+
+
