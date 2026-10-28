@@ -1,0 +1,20 @@
+  - first_ name: "Sai"
+    last_name: "Kumar"
+    doj: 01-15-2025
+    emp_id: 56785
+    addresses:
+    # - is for list
+    - type: permanent
+      door_no: 2-56,
+      street_name: RP Road
+      city: Hyderabad
+    - type: temporary
+      door_no: 2-56,
+      street_name: RP Road
+      city: Hyderabad
+      # below is map/object/dictionary
+    skills:
+      Linux
+      Windows
+      AWS
+    
