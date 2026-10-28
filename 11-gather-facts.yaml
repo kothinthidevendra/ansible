@@ -10,6 +10,6 @@
   - name: print os info
     debug:
       msg: |
-        OS Family: {{ ansible_facts.os_family }}
-        private op: {{ ansible_facts.default_ipv4.address }}
+        OS Family: {{ ansible_facts['os_family'] }}
+        private op: {{ ansible_facts['default_ipv4']['address'] }}
  
