@@ -5,4 +5,4 @@
   tasks:
   - name: print variables from command
     debug:
-      msg "Hello {{ person_name }}"
+      msg: "Hello {{ person_name }}"
