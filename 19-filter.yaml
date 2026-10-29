@@ -1,0 +1,9 @@
+- name: demo on filter
+  hosts: local
+  connection: local
+  vars:
+    topics: "Linux, Ansible, Cloud, Terraform"
+  tasks:
+  - name: print the name
+    debug:
+      msg: "Hi, {{ person_name | default('Ramesh') }}"
