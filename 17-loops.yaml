@@ -8,7 +8,7 @@
     - mysql
     - htop
   tasks:
-  - name: install package
+  - name: install packages
     package:
     - name: "{{ item }}"
       state: present
