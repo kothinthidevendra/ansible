@@ -1,7 +1,7 @@
 - name: install packages
   hosts: localhost
   connection: local
-  decome: yes
+  become: yes
   vars:
     packages:
     - nginx
