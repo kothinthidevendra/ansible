@@ -5,7 +5,7 @@
   vars:
     packages:
       - { name: 'nginx', state: 'absent' }
-      - { name: 'mysql', state: 'persent'}
+      - { name: 'mysql', state: 'present'}
       - { name: 'htop', state: 'present' }
   tasks:
   - name: package mamangement
