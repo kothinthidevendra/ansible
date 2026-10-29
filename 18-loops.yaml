@@ -2,14 +2,15 @@
 - name: package mamangement
   hosts: local
   connection: local
+  become: yes
   vars:
     packages:
       - { name: 'nginx', state: 'absent' }
-      - { name: 'mysql', state: 'present'}
+      - { name: 'mysql', state: 'present' }
       - { name: 'htop', state: 'present' }
   tasks:
   - name: package mamangement
     package:
-      name: "{{ item.list }}"
-      state: "{{ item.state }}"
+      name: "{{ list.name }}"
+      state: " {{ list.state }}"
     loop: "{{ packages }}"
