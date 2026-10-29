@@ -14,4 +14,4 @@
   
   - name: convert to string  
     debug:
-      msg: "Topics are: {{ topics | split(',') }}"
+      msg: "Topics are: {{ topics | split(',') | trim }}"
