@@ -5,3 +5,7 @@
   - name: check roboshop user exist or not
     command: id roboshop  # linux command, when there is no ansible module exist
     register: user_output
+
+  - name: print output
+    debug:
+      msg: "{{ user_output }}"
