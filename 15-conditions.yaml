@@ -1,6 +1,6 @@
 ---
 - name: print os distro
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
   - name: print the os distro as Redhat
