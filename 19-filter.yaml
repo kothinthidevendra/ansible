@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Cloud, Terraform"
+    names:
+    - Sai
+    - Kumar
+    - Swamy
   tasks:
   - name: print the name
     debug:
@@ -12,6 +16,10 @@
     debug:
       msg: "Hello, {{ topics }}"
   
-  - name: convert to string  
+  - name: convert string to list 
     debug:
       msg: "Topics are: {{ topics | split(',') | trim }}"
+  
+  - name: convert list to string
+    debug:
+      msg: "Full name: {{ names | join(' ') }}"
