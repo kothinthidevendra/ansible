@@ -1,6 +1,6 @@
 ---
 - name: install packages
-  hosts: local
+  hosts: localhost
   connection: local
   decome: yes
   vars:
