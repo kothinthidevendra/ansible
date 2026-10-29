@@ -1,0 +1,14 @@
+---
+- name: print os distro
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the os distro as Redhat
+    debug:
+      msg: " OS distro is redhat "
+    when: ansible_facts.os_family == "Redhat"
+
+  - name: print the os distro as Ubuntu
+    debug:
+      msg: " OS distro is ubuntu "
+    when: ansible_facts.os_family == "Debian"
