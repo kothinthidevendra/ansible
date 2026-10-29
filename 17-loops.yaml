@@ -7,6 +7,7 @@
     packages:
     - nginx
     - mysql
+    - htop
 
   tasks:
   - name: install packages
@@ -15,10 +16,4 @@
       state: present
     loop: "{{ packages }}"
 
-  - name: start service
-    service:
-      name: "{{ item }}"
-      state: started
-      enabled: yes
-    loop: "{{ packages }}"
   
