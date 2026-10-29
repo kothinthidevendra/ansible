@@ -6,7 +6,7 @@
   - name: print the os distro as Redhat
     debug:
       msg: " OS distro is redhat "
-    when: ansible_facts.os_family == "Redhat"
+    when: ansible_facts.os_family == "RedHat"
 
   - name: print the os distro as Ubuntu
     debug:
